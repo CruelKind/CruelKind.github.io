@@ -63,17 +63,32 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
-  .mid-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.main{
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: dashed 1px white;
+}
+
+.mid-container{
+    max-width: 800px;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: dashed 1px black;
+    
+}
 
 .mid-name{
-    color: white;
-    text-align: center;
+  background-color: red;
+  /* Center vertically and horizontally */
 }
 
 .mid-text{
