@@ -6,10 +6,78 @@
 
 }
 
-.header {
-    padding: 30px;
-    text-align: center;
-    background: #1abc9c;
+.navbar{
+    background: #3B373B;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar-logo {
     color: white;
-    font-size: 20px;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.navbar-item{
+    height: 80px;
+}
+.navbar-links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1 rem;
+    height: 100%;
+
+}
+
+/*Background image */
+html { 
+    background: url(pics/background-mountain.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
+
+  .mid-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+.mid-name{
+    color: white;
+    text-align: center;
+}
+
+.mid-text{
+    color: white;
+    font-size: large;
+}
+
