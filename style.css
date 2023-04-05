@@ -78,21 +78,93 @@ html {
 .mid-container{
     max-width: 800px;
     margin: auto;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: dashed 1px black;
+    color: white;
+    outline: dashed 1px red;
     
 }
 
 .mid-name{
-  background-color: red;
-  /* Center vertically and horizontally */
+    border:1px dashed #ccc;
+    font-size: x-large;
 }
 
-.mid-text{
-    color: white;
+#mid-text{
+    border:1px dashed #ccc;
     font-size: large;
 }
+
+.mid-nav{
+    border:1px dashed #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin-top: 10%;
+    padding:0;
+    text-align:center;
+}
+.mid-menu{
+    display:inline;
+}
+.mid-item{
+    display:inline-block;
+    padding:10px;
+
+}
+
+.mid-item:hover {
+    background: #bebebe;
+}
+
+
+/*Pop up*/
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  .pop-container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+
+  
+  .pop-container.pop-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .pop-container.pop-content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+
 
