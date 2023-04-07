@@ -6,56 +6,6 @@
 
 }
 
-.navbar{
-    background: #3B373B;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
-
-#navbar-logo {
-    color: white;
-}
-
-.navbar-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-}
-
-
-
-.navbar-item{
-    height: 80px;
-}
-.navbar-links{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1 rem;
-    height: 100%;
-
-}
-
 /*Background image */
 html { 
     background: url(pics/background-mountain.jpg) no-repeat center center fixed; 
@@ -141,30 +91,37 @@ html {
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
+
+    text-align: center;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
-    position: relative;
+
+    width: 50%;
+    height: 50%;
     transition: all 2s ease-in-out;
   }
 
   
-  .pop-container.pop-close {
+  .pop-container .pop-close {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 30px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: black;
   }
-  .pop-container.pop-content {
-    max-height: 30%;
+
+
+  .pop-container .pop-content {
+    max-height: 50%;
     overflow: auto;
   }
-  
 
+.resume-logo{
+   width: 10%;
+  height: 10%
 
+}
