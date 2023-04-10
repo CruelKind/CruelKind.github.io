@@ -7,13 +7,19 @@
 }
 
 /*Background image */
+
 html { 
+
+  
   background: url(pics/background-mountain.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  
 }
+
 
 .main{
   height: 90vh;
@@ -24,6 +30,9 @@ html {
 
   outline: dashed 1px white;
 }
+
+
+
 
 .mid-container{
   max-width: 800px;
@@ -116,13 +125,30 @@ html {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 
 .pop-container .pop-content {
+  text-align: left;
+  padding: 5%;
   max-height: 50%;
   overflow: auto;
+}
+
+.pop-pic{
+  margin-top: 5%;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+.resume-skills li{
+  margin-bottom: 8px;
+  font-size: 18px;
+  transition-property: opacity, transform;
+  transition-duration: 0.3s;
 }
 
 .resume-logo{
@@ -130,3 +156,5 @@ html {
 height: 10%
 
 }
+
+
