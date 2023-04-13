@@ -2,38 +2,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-
+  font-family: 'EB Garamond';
 }
 
 /*Background image */
 
 html { 
-
-  
   background: url(pics/background-mountain.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   
 }
 
 
 .main{
   height: 90vh;
-
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
-
-  outline: dashed 1px white;
 }
-
 
 
 
@@ -41,22 +30,21 @@ html {
   max-width: 800px;
   margin: auto;
   color: white;
-  outline: dashed 1px red;
   
 }
 
 .mid-name{
-  border:1px dashed #ccc;
+  color: wheat;
   font-size: x-large;
 }
 
 #mid-text{
-  border:1px dashed #ccc;
-  font-size: large;
+  color: wheat;
+  font-size: x-large;
+  text-align: center;
 }
 
 .mid-nav{
-  border:1px dashed #ccc;
   border-width:1px 0;
   list-style:none;
   margin-top: 10%;
@@ -70,15 +58,20 @@ html {
   display:inline-block;
   padding:10px;
 
+
+}
+
+.button{
+  color: wheat;
+  text-decoration: none;
 }
 
 .mid-item:hover {
-  background: #bebebe;
+  transform: scale(1.1); 
 }
 
 
 /*Pop up*/
-
 .overlay{
   position: fixed;
   top: 0;
@@ -104,12 +97,9 @@ html {
   left: 50%;
   transform: translate(-50%,-50%);
 
-  
-  
+  font-size: large;
   text-align: center;
-  
   padding: 20px;
-
 
   /*Blurs background and makes popup dark*/
   background:rgba(0, 0, 0, 0.8);
@@ -117,8 +107,7 @@ html {
 
   border-radius: 5px;
   color: white;
-  width: 40%;
-  transition: all 2s ease-in-out;
+  width: 30%;
 }
 
 
@@ -135,10 +124,7 @@ html {
 
 
 .pop-container .pop-content {
-
   text-align: left;
-  
-  
   padding: 5%;
   overflow: auto;
 }
@@ -148,21 +134,63 @@ html {
   width: 30%;
   height: auto;
   border-radius: 50%;
+}
 
+#pop-Contact .pop-container {
+  width: 400px;
+  height: 300px;
 }
 
 
 .resume-logo{
   width: 10%;
   height: 10%;
-   margin-right:15px;
+  text-align:center;
+}
+
+.row img{
+  width: 40px;
+  height: 40px;
+  margin-right:25px;
 }
 
 .row {
-  margin-top: 5%;
-
+  margin-bottom: 5%;
 }
 
+/*text Fades in*/
+.fade-text {
+  animation: fader 5s;
+  -webkit-animation: fader 5s;
+  -moz-animation: fader 5s;
+  -o-animation: fader 5s;
+  -ms-animation: fader 5s;
+}
+
+@keyframes fader {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fader {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fader {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fader {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fader {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 
 
